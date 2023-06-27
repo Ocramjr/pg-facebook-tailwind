@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    <div class="flex items-center flex-col">
-        <div>
-            <h1 class="text-blue-700 text-[30px]">Facebook</h1>
+    <main class="bg-[#f0f2f5] min-h-screen flex items-center justify-center gap-12">
+        <div class="max-w-md mb-[135px]">
+            <img class="h-24" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="">
+            <h2 class="text-2xl mx-7">
+                O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
+            </h2>
         </div>
-        <div>
-            <form class="flex items-center flex-col border border-solid p-2 w-80 gap-3">
-                <p>Entrar no Facebook</p>
-                <input type="email" placeholder="Email ou telefone">
-                <input type="password" placeholder="Senha">
-                <button value="entrar">Entrar</button>
-                <span>Esqueceu a conta?</span>
-                <span>ou</span>
-                <button value="conta">Criar nova conta</button>
-            </form>
+        <div class="flex flex-col max-w-sm gap-8">
+            <div class="flex flex-col gap-4 bg-white border rounded-lg shadow px-4 py-5">
+                <form class="flex flex-col gap-4">
+                    <input class="border text-[#1d2129] py-3 px-4 outline-none rounded-md" type="email" name="" id=""
+                        placeholder="Email">
+                    <input class="border text-[#1d2129] py-3 px-4 outline-none rounded-md" type="password" name="" id=""
+                        placeholder="Password">
+                    <button class="bg-[#1877f2] text-white border-none h-12 rounded-md text-xl" type="submit">Entrar</button>
+                </form>
+                <a class="text-center text-[#1877f2] text-sm" href="">Esqueceu a senha?</a>
+                <div class="flex gap-2 w-full items-center">
+                    <div class="w-full border-b"></div>
+                    <span class="text-[#96999e] text-xs">ou</span>
+                    <div class="w-full border-b"></div>
+                </div>
+                <button class="bg-[#42b72a] rounded-md h-12 text-white text-base border-none px-4 w-1/2 self-center">Criar nova conta</button>
+            </div>
+            <p class="text-sm text-center">
+                <a class="font-semibold text-sm" href="#">Criar uma Página</a> para uma celebridade, uma marca ou uma empresa.
+            </p>
         </div>
-    </div>
+    </main>
 </body>
+
 </html>
